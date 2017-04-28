@@ -46,3 +46,6 @@ chroot $CHROOT_PATH locale-gen en_GB.UTF-8
 echo "installing vim"
 chroot $CHROOT_PATH apt-get -y --force-yes install vim
 chroot $CHROOT_PATH update-alternatives --set editor /usr/bin/vim.basic
+
+echo "installing libgles2-mesa"
+chroot $CHROOT_PATH apt-get -y --force-yes install libgles2-mesa
